@@ -1,0 +1,15 @@
+.navbar {
+    margin: 32px 0;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: goldenrod;
+}
+
+.navbar__link{
+    color: brown;
+    text-decoration: none;
+    margin: 0 60px;
+}

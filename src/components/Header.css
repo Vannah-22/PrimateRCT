@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adff2f;
+}
+
+.header__title {
+    color: #008000;
+}
+
+.header__logo {
+    height: 2.5rem;
+}

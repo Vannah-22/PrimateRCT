@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adff2f;
+}
+
+.footer__cprt {
+    color: green;
+}
+
+.footer__copyrightText {
+    font-size: 24px;
+    color: black;
+}

@@ -1,0 +1,28 @@
+.content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__image {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+
+}
+
+.content__title {
+    margin: 10px 0;
+
+}
+
+/* .content__body {
+
+} */
+
+.content--home {
+    text-align: center;
+}
