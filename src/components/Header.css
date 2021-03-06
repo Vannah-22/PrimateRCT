@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     background-color: #adff2f;
+    height: 75px; 
 }
 
 .header__title {
