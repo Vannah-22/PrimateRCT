@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 
 import './Navbar.css'; // seperate files to import so that the user only needs to load (in the browser) what they need, not ALL of it //
 
-class Navbar extends React.Component {
+class Navbar extends React.Component { //function based instead of class based//
 
     render() {
         return (     
@@ -12,7 +12,7 @@ class Navbar extends React.Component {
                 
 
                 <NavLink to="/" className="navbar__link"
-                    onClick={this.props.setColor()}> Home {/* When I click on the bees Navlink, change color to default */}
+                    onClick={this.props.setColor("")}> Home {/* When I click on the bees Navlink, change color to default */}
                 </NavLink> 
 
                 <NavLink to="/bees" className="navbar__link"
@@ -32,3 +32,9 @@ class Navbar extends React.Component {
     }
 }
 export default Navbar;
+
+
+// use state to change the background color of the page when a different Navlink is clicked
+// Home white
+//bees grey
+//ladybugs pink
