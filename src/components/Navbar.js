@@ -26,7 +26,6 @@ class Navbar extends React.Component {
                     {/* When I click on the ladybugs Navlink, change properties to the 
                     properties from the .pruple class (from Navbar.css). */}
                     </NavLink>
-                </NavLink>
 
             </nav>
         )
