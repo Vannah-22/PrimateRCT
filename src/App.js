@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {HashRouter, Route} from 'react-router-dom';
 
@@ -14,13 +14,30 @@ import ContentLadybug from './components/ContentLadybug';
 
 
 function App() {
+  // // this sytax uses a hook. 
+  // // const declares variable
+  // //count is the name of the variable in state
+  // // setCount:  the method used that variable
+  // // useState(0); 0 is the default value (YOU NEED THIS, OR ELSE USESTATE IS NOT DEFINED) import React, {useState} from 'react';) 
+        //we only use it once to declare it, so you can change the value of it later in the code
+        // traditionally, varName, setvarName, so consistency matters; be as descriptive as possible.
+  const [count, setCount] = useState(0);
+
+  const [color,setColor] = useState("");
+
+
+
   return (
     // when we use react router, we need to place everything inside a HashRouter tag
     <HashRouter>
         <div className="App">
             <Header />
             {/* <Footer /> */}
-            <Navbar />
+
+            <Navbar
+              color={color} 
+              setColor={setColor}
+              />
 
             {/* purely to set up routes and associated content */}
             <div className="content-section" >
@@ -32,9 +49,16 @@ function App() {
               <Route path="/ladybugs"component={ContentLadybug} />
 
             </div>
+              <p> You clicked {count} times </p>
+              <button onClick={
+                function () {
+                  setCount(count + 1);
+                }
+              }> 
+              Click me to increase the count 
+              </button>
 
-
-        </div>
+            </div>
     </HashRouter>
   );
 }
