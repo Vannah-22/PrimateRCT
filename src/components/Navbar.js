@@ -34,7 +34,7 @@ class Navbar extends React.Component { //function based instead of class based//
 export default Navbar;
 
 
-// use state to change the background color of the page when a different Navlink is clicked
+// use state to change the background color of the navbar when a different Navlink is clicked
 // Home white
 //bees grey
 //ladybugs pink
